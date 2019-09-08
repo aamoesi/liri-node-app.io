@@ -1,4 +1,4 @@
-let dotenv = require("dotenv").config();
+require("dotenv").config();
 let moment = require("moment");
 let keys = require("./keys.js");
 let fs = require("fs");
@@ -9,20 +9,20 @@ let userMethod = process.argv[2];
 let userInput = process.argv.slice(3).join(" ");
 
 
-let movieThis = function(userInput) {
+let movieThis = function (userInput) {
     if (!userInput) {
         userInput = "Mr. Nobody";
     }
     axios.get("http://www.omdbapi.com/?t=" + userInput + "&it&apikey=trilogy").then(
-        function(response, err) {
+        function (response, err) {
             let results = JSON.stringify(response.data);
             console.log("The movie's information is: " + results);
         })
 };
 
-let concertThis = function(userInput) {
+let concertThis = function (userInput) {
     axios.get("https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp").then(
-        function(response, err) {
+        function (response, err) {
             console.log(response.data[0].venue.name);
             console.log(response.data[0].venue.city);
             console.log(moment(response.data[0].datetime).format("MM-DD-YYYY"));
@@ -31,9 +31,9 @@ let concertThis = function(userInput) {
 };
 
 
-var doWhatItSays = function() {
+var doWhatItSays = function () {
     let data = "";
-    fs.readFile("random.txt", 'utf-8', function(err, response) {
+    fs.readFile("random.txt", 'utf-8', function (err, response) {
         // console.log(response.split(','))
         let result = response.split(",");
         console.log(result)
@@ -61,7 +61,7 @@ var doWhatItSays = function() {
 // };
 
 
-let spotifyThisSong = function(userInput) {
+let spotifyThisSong = function (userInput) {
 
 
     const Spotify = require("node-spotify-api");
@@ -71,7 +71,7 @@ let spotifyThisSong = function(userInput) {
     spotify.search({
         type: 'track',
         query: userInput
-    }, function(err, response) {
+    }, function (err, response) {
         if (err) {
             return console.log(`Error present: ${err}`);
         }
