@@ -1,5 +1,5 @@
 
-# LIRI Bot
+# liri-node-app
 
 Overview
 
