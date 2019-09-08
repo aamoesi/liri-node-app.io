@@ -44,20 +44,19 @@ var doWhatItSays = function () {
 };
 
 
-// let doWhatItSays = function(userInput){
-//   if (process.argv[2] == "do-what-i-say"){
-//   fs.readFile("random.txt", "utf8", function(err, result, data){
-//     if(err){
-//       console.log("Error alert")
+// let doWhatItSays = function (userInput) {
+//     if (process.argv[2] == "do-what-i-say") {
+//         fs.readFile("random.txt", "utf8", function (err, result, data) {
+//             if (err) {
+//                 console.log("Error alert")
+//             } else {
+//                 let result = result.split(",");
+//                 spotifyThisSong(result)[1];
+//                 data = `${result[1]}\n`;
+//                 output(data);
+//             }
+//         })
 //     }
-//     else{
-//       let result = result.split(",");
-//       spotifyThisSong(result)[1];
-//       data = `${result[1]}\n`;
-//       output(data);
-//     }
-//   })
-// }
 // };
 
 
