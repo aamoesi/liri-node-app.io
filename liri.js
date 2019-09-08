@@ -76,10 +76,10 @@ let spotifyThisSong = function(userInput) {
             return console.log(`Error present: ${err}`);
         }
         //console.log(JSON.stringify(response));
-        console.log(`Song: ${response.tracks.items[0].name}`);
-        console.log(`Album: ${response.tracks.items[0].album.name}`);
-        console.log(`Artist: ${response.tracks.items[0].artists[0].name}`);
-        console.log(`Preview: ${response.tracks.items[0].preview_url}`);
+        console.log('Song: ${response.tracks.items[0].name}');
+        console.log('Album: ${response.tracks.items[0].album.name}');
+        console.log('Artist: ${response.tracks.items[0].artists[0].name}');
+        console.log('Preview: ${response.tracks.items[0].preview_url}');
 
         if (!userInput) {
             userInput = "Honey Hold Me";
