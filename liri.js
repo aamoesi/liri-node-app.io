@@ -1,4 +1,4 @@
-require("dotenv").config();
+let dotenv = require("dotenv").config();
 let moment = require("moment");
 let keys = require("./keys.js");
 let fs = require("fs");
