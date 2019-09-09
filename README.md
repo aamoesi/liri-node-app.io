@@ -33,13 +33,13 @@ Each command produced different search results as listed below:
 	* Rotten Tomatoes Rating of the movie
 *	node liri.js do-what-it-says
     * Print the spotify results for “I want it that way” stored in the random.txt file
-    
+
 Code by Command
 concert-this
 This command used the Bands in Town Artist Events API. An axios.get sent the search request and the results were console.logged using moment to change the format of the returned date.
 
 
-let concertThis = function (userInput) {
+```let concertThis = function (userInput) {
     axios.get("https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp").then(
         function (response, err) {
             console.log(response.data[0].venue.name);
@@ -48,7 +48,7 @@ let concertThis = function (userInput) {
 
         })
 };
-
+```
 spotify-this-song
 This command used the Spotify request API. A node-spotify-api spotify.request sent the search request and the results were console.logged.
 
