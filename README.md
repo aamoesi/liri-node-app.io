@@ -129,6 +129,6 @@ LIRI required installation of several npm packages and links to local files.
     let axios = require("axios");
 
 
-SCREENSHOTS
-all screenshots are in image folder
+SCREENSHOTS:
+All screenshots are in image folder
 
