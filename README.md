@@ -1,7 +1,5 @@
 
-# liri-node-app
 LIRI Bot
-
 Overview
 In this assignment, I made a LIRI. LIRI is like iPhone’s SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
@@ -34,7 +32,6 @@ Actors in the movie
 Rotten Tomatoes Rating of the movie
 node liri.js do-what-it-says
 Print the spotify results for “I want it that way” stored in the random.txt file
-
 
 Code by Command
 concert-this
