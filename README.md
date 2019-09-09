@@ -1,41 +1,42 @@
+liri-node-app
 LIRI Bot
 Overview
 In this assignment, I made a LIRI. LIRI is like iPhone’s SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
-Expected Outcomes
 
+Expected Outcomes
 The LIRI Bot was designed to produce search results based on the following commands:
 
-•	node liri.js concert-this
-•	node liri.js spotify-this-song
-•	node liri.js movie-this
-•	node liri.js do-what-it-says
+node liri.js concert-this
+node liri.js spotify-this-song
+node liri.js movie-this
+node liri.js do-what-it-says
 Each command produced different search results as listed below:
-•	node liri.js concert-this “artist/band name”
 
-o	Name of venue
-o	Venue location
-o	Date of the event in MM/DD/YYYY format
-•	node liri.js spotify-this-song “song/track name”
-o	Artist
-o	Song
-o	Spotify song preview url
-o	Album
-•	node liri.js movie-this “movie title”
-o	Title of the movie
-o	Year the movie came out
-o	IMDB Rating of the movie
-o	Country where the movie was produced
-o	Language of the movie
-o	Plot of the movie
-o	Actors in the movie
-o	Rotten Tomatoes Rating of the movie
-•	node liri.js do-what-it-says
-o	Print the spotify results for “I want it that way” stored in the random.txt file
-
-
+node liri.js concert-this “artist/band name”
+Name of venue
+Venue location
+Date of the event in MM/DD/YYYY format
+node liri.js spotify-this-song “song/track name”
+Artist
+Song
+Spotify song preview url
+Album
+node liri.js movie-this “movie title”
+Title of the movie
+Year the movie came out
+IMDB Rating of the movie
+Country where the movie was produced
+Language of the movie
+Plot of the movie
+Actors in the movie
+Rotten Tomatoes Rating of the movie
+node liri.js do-what-it-says
+Print the spotify results for “I want it that way” stored in the random.txt file
 Code by Command
 concert-this
 This command used the Bands in Town Artist Events API. An axios.get sent the search request and the results were console.logged using moment to change the format of the returned date.
+
+
 
 let concertThis = function (userInput) {
     axios.get("https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp").then(
