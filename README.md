@@ -5,17 +5,18 @@ In this assignment, I made a LIRI. LIRI is like iPhone’s SIRI. However, while 
 Expected Outcomes
 
 The LIRI Bot was designed to produce search results based on the following commands:
-•	node liri.js concert-this
-•	node liri.js spotify-this-song
-•	node liri.js movie-this
-•	node liri.js do-what-it-says
+* node liri.js concert-this
+* node liri.js spotify-this-song
+* node liri.js movie-this
+* node liri.js do-what-it-says
 Each command produced different search results as listed below:
-•	node liri.js concert-this “artist/band name”
-o	Name of venue
-o	Venue location
-o	Date of the event in MM/DD/YYYY format
-•	node liri.js spotify-this-song “song/track name”
-o	Artist
+* node liri.js concert-this “artist/band name”
+    * Name of venue
+    * Venue location
+    * Date of the event in MM/DD/YYYY format
+
+*	node liri.js spotify-this-song “song/track name”
+    * Artist
 o	Song
 o	Spotify song preview url
 o	Album
