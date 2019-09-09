@@ -82,7 +82,7 @@ movie-this
 This command used the omdb API. An axios.get sent the search request and the results were console.logged.
 
 
-let movieThis = function (userInput) {
+    let movieThis = function (userInput) {
     if (!userInput) {
         userInput = "Mr. Nobody";
     }
@@ -91,14 +91,14 @@ let movieThis = function (userInput) {
             let results = JSON.stringify(response.data);
             console.log("The movie's information is: " + results);
         })
-};
+    };
 
 
 do-what-it-says
 This command pulled the spotify-this-song information from the local random.txt file.
 
 
-var doWhatItSays = function () {
+    var doWhatItSays = function () {
     let data = "";
     fs.readFile("random.txt", 'utf-8', function (err, response) {
         // console.log(response.split(','))
@@ -107,8 +107,8 @@ var doWhatItSays = function () {
         spotifyThisSong(result[1]);
         //data = `${result[1]}\n`;
         console.log(data);
-    });
-};
+     });
+    };
 
 Spotify API, Client ID & Client SECRET
 The Spotify API requires developers to sign up and generate the necessary API credentials (client id and client secret):
@@ -122,11 +122,11 @@ As a security precaution the Spotify Client ID & SECRET were stored on a local .
 Require & Local Linked files
 LIRI required installation of several npm packages and links to local files.
 
-let dotenv = require("dotenv").config();
-let moment = require("moment");
-let keys = require("./keys.js");
-let fs = require("fs");
-let axios = require("axios");
+    let dotenv = require("dotenv").config();
+    let moment = require("moment");
+    let keys = require("./keys.js");
+    let fs = require("fs");
+    let axios = require("axios");
 
 
 SCREENSHOTS
