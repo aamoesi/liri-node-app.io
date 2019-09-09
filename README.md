@@ -2,13 +2,16 @@ LIRI Bot
 Overview
 In this assignment, I made a LIRI. LIRI is like iPhone’s SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 Expected Outcomes
+
 The LIRI Bot was designed to produce search results based on the following commands:
+
 •	node liri.js concert-this
 •	node liri.js spotify-this-song
 •	node liri.js movie-this
 •	node liri.js do-what-it-says
 Each command produced different search results as listed below:
 •	node liri.js concert-this “artist/band name”
+
 o	Name of venue
 o	Venue location
 o	Date of the event in MM/DD/YYYY format
