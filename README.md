@@ -50,12 +50,11 @@ This command used the Bands in Town Artist Events API. An axios.get sent the sea
     };
 
 spotify-this-song
+
 This command used the Spotify request API. A node-spotify-api spotify.request sent the search request and the results were console.logged.
 
 
-let spotifyThisSong = function (userInput) {
-
-
+    let spotifyThisSong = function (userInput) {
     const Spotify = require("node-spotify-api");
     //console.log(keys.SPOTIFY_KEY);
     const spotify = new Spotify(keys.SPOTIFY_KEY);
@@ -77,7 +76,7 @@ let spotifyThisSong = function (userInput) {
             userInput = "Honey Hold Me";
         }
     });
-}
+    }
 
 movie-this
 This command used the omdb API. An axios.get sent the search request and the results were console.logged.
