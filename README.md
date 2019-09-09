@@ -39,7 +39,7 @@ concert-this
 This command used the Bands in Town Artist Events API. An axios.get sent the search request and the results were console.logged using moment to change the format of the returned date.
 
 
-```let concertThis = function (userInput) {
+    let concertThis = function (userInput) {
     axios.get("https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp").then(
         function (response, err) {
             console.log(response.data[0].venue.name);
@@ -47,8 +47,8 @@ This command used the Bands in Town Artist Events API. An axios.get sent the sea
             console.log(moment(response.data[0].datetime).format("MM-DD-YYYY"));
 
         })
-};
-```
+    };
+
 spotify-this-song
 This command used the Spotify request API. A node-spotify-api spotify.request sent the search request and the results were console.logged.
 
